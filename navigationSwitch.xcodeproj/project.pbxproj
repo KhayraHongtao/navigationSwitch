@@ -13,6 +13,10 @@
 		F758263422BA369400FA510A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F758263322BA369400FA510A /* Assets.xcassets */; };
 		F758263722BA369400FA510A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F758263522BA369400FA510A /* LaunchScreen.storyboard */; };
 		F758263A22BA369400FA510A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F758263922BA369400FA510A /* main.m */; };
+		F758264622BA374000FA510A /* OViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F758264522BA374000FA510A /* OViewController.m */; };
+		F758264922BA375700FA510A /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F758264822BA375700FA510A /* TwoViewController.m */; };
+		F758264C22BA376400FA510A /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F758264B22BA376400FA510A /* ThreeViewController.m */; };
+		F758265022BA37CD00FA510A /* KTMultipleSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = F758264E22BA37CC00FA510A /* KTMultipleSwitch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,14 @@
 		F758263622BA369400FA510A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F758263822BA369400FA510A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F758263922BA369400FA510A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F758264422BA374000FA510A /* OViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OViewController.h; sourceTree = "<group>"; };
+		F758264522BA374000FA510A /* OViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OViewController.m; sourceTree = "<group>"; };
+		F758264722BA375700FA510A /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		F758264822BA375700FA510A /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		F758264A22BA376400FA510A /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		F758264B22BA376400FA510A /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		F758264E22BA37CC00FA510A /* KTMultipleSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTMultipleSwitch.m; sourceTree = "<group>"; };
+		F758264F22BA37CC00FA510A /* KTMultipleSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTMultipleSwitch.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +70,17 @@
 		F758262922BA369300FA510A /* navigationSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				F758264D22BA37CC00FA510A /* SwitchView */,
 				F758262A22BA369300FA510A /* AppDelegate.h */,
 				F758262B22BA369300FA510A /* AppDelegate.m */,
 				F758262D22BA369300FA510A /* ViewController.h */,
 				F758262E22BA369300FA510A /* ViewController.m */,
+				F758264422BA374000FA510A /* OViewController.h */,
+				F758264522BA374000FA510A /* OViewController.m */,
+				F758264722BA375700FA510A /* TwoViewController.h */,
+				F758264822BA375700FA510A /* TwoViewController.m */,
+				F758264A22BA376400FA510A /* ThreeViewController.h */,
+				F758264B22BA376400FA510A /* ThreeViewController.m */,
 				F758263022BA369300FA510A /* Main.storyboard */,
 				F758263322BA369400FA510A /* Assets.xcassets */,
 				F758263522BA369400FA510A /* LaunchScreen.storyboard */,
@@ -69,6 +88,15 @@
 				F758263922BA369400FA510A /* main.m */,
 			);
 			path = navigationSwitch;
+			sourceTree = "<group>";
+		};
+		F758264D22BA37CC00FA510A /* SwitchView */ = {
+			isa = PBXGroup;
+			children = (
+				F758264F22BA37CC00FA510A /* KTMultipleSwitch.h */,
+				F758264E22BA37CC00FA510A /* KTMultipleSwitch.m */,
+			);
+			path = SwitchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F758262F22BA369300FA510A /* ViewController.m in Sources */,
+				F758265022BA37CD00FA510A /* KTMultipleSwitch.m in Sources */,
+				F758264C22BA376400FA510A /* ThreeViewController.m in Sources */,
 				F758263A22BA369400FA510A /* main.m in Sources */,
+				F758264622BA374000FA510A /* OViewController.m in Sources */,
+				F758264922BA375700FA510A /* TwoViewController.m in Sources */,
 				F758262C22BA369300FA510A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +317,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = navigationSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Khayra.navigationSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -301,7 +335,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = navigationSwitch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +344,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Khayra.navigationSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
